@@ -55,7 +55,7 @@ const Typewriter = ({ dataText, period }) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [delta, setDelta] = useState(200 - Math.random() * 100);
-  const [index, setIndex] = useState(1); // Controls the typing speed
+
 
   useEffect(() => {
     const handleTick = () => {

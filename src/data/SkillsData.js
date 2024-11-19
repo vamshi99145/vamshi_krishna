@@ -1,24 +1,22 @@
 import { DiJavascript1 } from "react-icons/di";
 import {
 	FaCss3Alt,
-	FaFigma,
+
 	FaGithub,
 	FaHtml5,
 	FaReact,
 	FaSass
 } from "react-icons/fa";
-import { RiVuejsLine } from "react-icons/ri";
+
 import {
-	SiAdobephotoshop,
+
 	SiFirebase,
 	SiFramer,
 	SiNextdotjs,
-	SiRedux,
-	SiStyledcomponents,
-	SiTailwindcss,
+
 	SiTypescript,SiMongodb,SiJson
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+
 import { FaNodeJs,FaServer,FaCogs   } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 

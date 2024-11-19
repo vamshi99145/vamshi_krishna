@@ -6,23 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ThreadApp from '../videos/ThreadApp.mp4';
 import ClothingWebsite from '../videos/ClothingWebsite.mp4';
-import EducationWebsite from '../videos/EducationWebsite.mp4';
+
 import FoodRestaurant from '../videos/FoodRestaurant.mp4';
 import Travel from '../videos/Travel.mp4';
 import Footwear from '../videos/Footwear.mp4';
 
-// Custom arrow components
-const PrevArrow = ({ onClick }) => (
-  <div className="slick-arrow prev" onClick={onClick}>
-    <i className="fas fa-angle-left"></i>
-  </div>
-);
 
-const NextArrow = ({ onClick }) => (
-  <div className="slick-arrow next" onClick={onClick}>
-    <i className="fas fa-angle-right"></i>
-  </div>
-);
+
 
 const Projects = () => {
     const fade = {
