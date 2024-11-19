@@ -1,187 +1,213 @@
-.works-box {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1rem;
+:root {
+    --section-bgd: #00021a; /* Deep blue background color */
 }
 
-.work-link-group {
-	text-decoration: none;
+.works {
+    padding: 60px 0;
+    background-color: var(--section-bgd); /* Using your custom deep blue color */
 }
 
-.works-container {
-	width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.works-card {
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
-	border-radius: 5px;
-	position: relative;
-	padding: 1rem 2rem;
-	width: 300px;
-	max-width: 300px;
-	margin: 0 auto;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	cursor: pointer;
-	transition: all 0.3s ease;
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.works-card:hover {
-	transform: translateY(-7px);
+.heading-sub-text {
+    font-size: 18px;
+    color: #fff; /* White text color for contrast */
 }
 
-.works-card:hover .work-title {
-	color: var(--nav-blue);
+.heading-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* White text color for contrast */
 }
 
-.top-work {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 2rem;
+.projects {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.top-work .right {
-	display: flex;
+.project-card {
+    background: var(--section-bgd); /* Match the background to section's color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Increased the width of the card */
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
 }
 
-.mid-work {
-	margin-bottom: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.work-title {
-	font-size: 1.3rem;
-	font-weight: 700;
-	word-spacing: 5px;
-	margin-bottom: 0.5rem;
+.project-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    background: linear-gradient(90deg, #6a82fb, #6a82fb); /* Gradient with violet only */
+    -webkit-background-clip: text; /* Chrome, Safari */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Makes the text transparent to show the gradient */
+    padding-bottom: 5px;
+    letter-spacing: 1px; /* Subtle space between letters */
 }
 
-.work-desc {
-	font-size: 70%;
+.project-name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #6a82fb; /* Line color matching the gradient */
+    transition: all 0.3s ease;
 }
 
-.work-folder {
-	font-size: 2rem;
-	color: var(--nav-blue);
+.project-name:hover::after {
+    width: 100%;
+    background-color: #6a82fb; /* Line color remains violet on hover */
 }
 
-.work-git,
-.work-link {
-	color: var(--nav-grey);
-	margin: 0 0.5rem;
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	transition: all 0.3s ease;
-}
-.work-git:hover,
-.work-link:hover {
-	color: var(--nav-blue);
+.project-name:hover {
+    color: #fff; /* Ensures text color is white on hover */
+    transform: scale(1.05); /* Slightly enlarges the name on hover */
+    letter-spacing: 2px; /* Increases letter-spacing when hovered */
 }
 
-.bottom-work {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 5px;
-	justify-content: center;
-	align-items: center;
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounds the corners of the image */
+    margin-bottom: 20px; /* Space between the image and text */
+    animation: border-animation 3s infinite linear; /* Applies the animation */
+    border: 2px solid #6a82fb; /* Starting border size and color */
 }
 
-.bottom-work small {
-	margin: 0 0.5rem;
-	font-size: 60%;
+/* Keyframes for the border animation */
+@keyframes border-animation {
+    0% {
+        border: 2px solid #6a82fb; /* Violet at the start */
+    }
+    25% {
+        border: 2px solid #6a82fb; /* Violet at 25% of the animation */
+    }
+    50% {
+        border: 2px solid #6a82fb; /* Violet again at 50% */
+    }
+    75% {
+        border: 2px solid #6a82fb; /* Violet again at 75% */
+    }
+    100% {
+        border: 2px solid #6a82fb; /* Violet at the end */
+    }
 }
 
-/* New styles for tabs */
-.tabs {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 2rem;
-  }
-  
-  .tab {
-	padding: 0.5rem 1rem;
-	margin: 0 0.5rem;
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	font-size: 1rem;
-	outline: none;
-  }
-  
-  .tab:hover {
-	background-color: var(--nav-blue);
-	color: white;
-  }
-  
-  .tab.active {
-	background-color: var(--nav-blue);
-	color: white;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 750px) {
-	.tabs {
-	  flex-wrap: wrap;
-	}
-  
-	.tab {
-	  margin: 0.5rem;
-	}
-  }
-
-/* Media Queries */
-@media screen and (max-width: 750px) {
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #6a82fb, #6a82fb); 
+    border-radius: 0.9em; 
+    border: 2px solid #714da6; 
+    box-shadow: inset 0 0 1.6em -0.6em rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (max-width: 550px) {
-	.work-desc {
-		font-size: 60%;
-	}
+.project-link:hover {
+    background: #6a82fb; 
+    transform: scale(1.05); 
+    box-shadow: inset 0 0 1.6em -0.4em rgba(0, 0, 0, 0.3); 
+}
+/* Base styles (already in your code) */
 
-	.work-folder {
-		font-size: 1.5rem;
-	}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .works {
+        padding: 40px 0; /* Reduced padding on smaller screens */
+    }
 
-	.work-git,
-	.work-link {
-		font-size: 1.2rem;
-	}
+    .container {
+        width: 95%; /* Increase container width for smaller screens */
+    }
 
-	.work-title {
-		font-size: 1.2rem;
-	}
+    .heading {
+        text-align: left; /* Align heading to the left on smaller screens */
+    }
 
-	.bottom-work small {
-		font-size: 50%;
-	}
+    .heading-text {
+        font-size: 28px; /* Adjust heading font size for mobile */
+    }
+
+    .heading-sub-text {
+        font-size: 16px; /* Smaller font size for subheading */
+    }
+
+    .projects {
+        display: block; /* Stack projects vertically on smaller screens */
+        gap: 20px; /* Less gap between cards */
+        justify-content: flex-start;
+    }
+
+    .project-card {
+        width: 100%; /* Full width of the parent container */
+        margin: 0 auto; /* Center the card */
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .project-name {
+        font-size: 24px; /* Smaller font size for project names */
+    }
+
+    .project-link {
+        padding: 10px 20px; /* Smaller padding for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
 }
 
-@media screen and (max-width: 320px) {
-	.works-card {
-		width: 250px;
-		max-width: 300px;
-		margin: 0 auto;
-		height: 250px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		cursor: pointer;
-		transition: all 0.3s ease;
-	}
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 24px; /* Further reduced for very small screens */
+    }
+
+    .heading-sub-text {
+        font-size: 14px; /* Further reduced for very small screens */
+    }
+
+    .projects {
+        gap: 10px; /* Reduce gap even more on very small screens */
+    }
+
+    .project-card {
+        width: 100%; /* Ensure the card is full width on mobile */
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .project-name {
+        font-size: 20px; /* Reduce project name font size */
+    }
+
+    .project-link {
+        padding: 8px 15px; /* Smaller padding for mobile */
+        font-size: 12px; /* Further reduced font size */
+    }
 }

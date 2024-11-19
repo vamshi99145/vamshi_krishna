@@ -5,14 +5,12 @@ import {BiCodeAlt} from "react-icons/bi"
 import { motion } from "framer-motion";
 
 const Services = () => {
-
    const fade = {
     opacity: 1,
     transition:{
         duration: 1.4
     }
    }
-
   return (
       <>
           <div className="services" id='services'>
@@ -24,13 +22,23 @@ const Services = () => {
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>
                     <div className="services-card">
                         <BiCodeAlt className='services-icon' />
-                        <p className='services-title'>Web Development</p>
-                        <p className='services-desc'>I use various web technologies to develop attractive,creative, interactive, responsive and functional website layouts. </p>
+                        <p className='services-title'>Backend Developemnt</p>
+                        <p className='services-desc'>I build strong and reliable backend systems that make websites run smoothly and efficiently</p>
                     </div>
                     <div className="services-card">
                         <IoColorWandOutline className='services-icon' />
-                        <p className='services-title'>UI Design</p>
-                        <p className='services-desc'>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+                        <p className='services-title'>Frontend Development</p>
+                        <p className='services-desc'>I create user-friendly, easy-to-use, and visually appealing websites that are easy to navigate and interact with.</p>
+                    </div>
+                    <div className="services-card">
+                        <BiCodeAlt className='services-icon' />
+                        <p className='services-title'>Product Optimization & Growth Strategy</p>
+                        <p className='services-desc'>I optimize products and create growth strategies to improve performance, make things easier for users, and grow the business. </p>
+                    </div>
+                    <div className="services-card">
+                        <BiCodeAlt className='services-icon' />
+                        <p className='services-title'>Social Media Marketing & Brand Engagement </p>
+                        <p className='services-desc'>I handle social media marketing and brand engagement to increase visibility, connect with people, and grow the brand. </p>
                     </div>
                 </motion.div>
               </div>

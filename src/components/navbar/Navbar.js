@@ -56,7 +56,7 @@ const Navbar = ({ nav, handleNav }) => {
 							onClick={handleNav}
 							to='home'
 							className='profile-name'>
-							Peace Jinadu-Paul
+							vamshi krishna
 						</Link>
 						<NavLinks handleNav={handleNav} />
 					</div>
@@ -124,6 +124,19 @@ const Navbar = ({ nav, handleNav }) => {
 							<BiBookContent className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
 								Works
+							</li>
+						</Link>
+						<Link
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							to='projects'
+							className='mid-links'>
+							<BiBookContent className='mid-icon' />
+							<li className='mid-link' onClick={handleNav}>
+								Projects
 							</li>
 						</Link>
 						<Link

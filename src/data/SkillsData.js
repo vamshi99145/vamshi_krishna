@@ -16,9 +16,12 @@ import {
 	SiRedux,
 	SiStyledcomponents,
 	SiTailwindcss,
-	SiTypescript
+	SiTypescript,SiMongodb,SiJson
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { FaNodeJs,FaServer,FaCogs   } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
+
 
 export const SkillsData = [
 	{
@@ -46,33 +49,49 @@ export const SkillsData = [
 		icon: <SiNextdotjs />,
 	},
 	{
-		name: "Vue Js",
-		icon: <RiVuejsLine />, 
+		name: "Node JS",
+		icon: <FaNodeJs />,
 	},
 	{
-		name: "React Native",
-		icon: <TbBrandReactNative />,
+		name: "MySQL",
+		icon: <DiMysql />,
 	},
 	{
-		name: "Redux",
-		icon: <SiRedux />,
+		name: "MongoDB",
+		icon: <SiMongodb />,
 	},
+	{
+		name: "REST API Development",
+		icon: <FaServer />,
+	},
+	{
+		name: "JSON",
+		icon: <SiJson />,
+	},
+	// {
+	// 	name: "React Native",
+	// 	icon: <TbBrandReactNative />,
+	// },
+	// {
+	// 	name: "Redux",
+	// 	icon: <SiRedux />,
+	// },
 	{
 		name: "Firebase",
 		icon: <SiFirebase />,
 	},
-	{
-		name: "Tailwind",
-		icon: <SiTailwindcss />,
-	},
+	// {
+	// 	name: "Tailwind",
+	// 	icon: <SiTailwindcss />,
+	// },
 	{
 		name: "Sass",
 		icon: <FaSass />,
 	},
-	{
-		name: "Styled Components",
-		icon: <SiStyledcomponents />,
-	},
+	// {
+	// 	name: "Styled Components",
+	// 	icon: <SiStyledcomponents />,
+	// },
 	{
 		name: "Framer Motion",
 		icon: <SiFramer />,
@@ -82,11 +101,11 @@ export const SkillsData = [
 		icon: <FaGithub />,
 	},
 	{
-		name: "Figma",
-		icon: <FaFigma />,
-	},
-	{
-		name: "Photoshop",
-		icon: <SiAdobephotoshop />,
-	},
+		name: "Data Structures",
+		icon: <FaCogs />,
+	  },
+	// {
+	// 	name: "Photoshop",
+	// 	icon: <SiAdobephotoshop />,
+	// },
 ];

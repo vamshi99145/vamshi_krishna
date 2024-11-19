@@ -1,117 +1,82 @@
-import React, { useState } from "react";
+// import React from "react";
+// import "../styles/HeroSection.css";
+// import { FaBars, FaTimes } from "react-icons/fa";
+// import VamshiPhoto from "../images/Vamshi1.jpg"; // Importing the image
+// import Typewriter from './TypingText';
+// const HeroSection = ({ nav, handleNav }) => {
+//   const scrollToAbout = () => {
+//     // Scroll to the About section smoothly
+//     const aboutSection = document.getElementById('about');
+//     aboutSection.scrollIntoView({ behavior: 'smooth' });
+//   };
+
+//   return (
+//     <div className="hero-section" name="home" id="home">
+//       <div className="hero-overlay"></div>
+//       <div className="menu-icon" onClick={handleNav}>
+//         {nav ? <FaTimes /> : <FaBars />}
+//       </div>
+    
+//       <div className="hero-content">
+//         <div className="text-side">
+//           <h1>Hi there!</h1>
+//           <h2>I'm a Software Engineer</h2>
+//           {/* I focus on solving problems and building easy-to-use applications that work efficiently and get things done. */}
+//           <p> I enjoy taking on challenges and creating solutions that make tasks easier for users.</p>
+//           <button className="explore-btn" onClick={scrollToAbout}>Explore...</button>
+//         </div>
+//         <div className="photo-side">
+//           <img src={VamshiPhoto} alt="Vamshi Krishna" className="profile-photo" />
+//           {/* <h6 className="photo-name">Serla Vamshi Krishna</h6> */}
+//           <Typewriter
+//             dataText={["Serla Vamshi Krishna"]} // Display your name
+//             period={5000}
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HeroSection;
+
+import React from "react";
 import "../styles/HeroSection.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { BiDownload } from "react-icons/bi";
-import { AiOutlineArrowUp } from "react-icons/ai";
-import { animateScroll as scroll } from "react-scroll";
-import { motion } from "framer-motion";
+import VamshiPhoto from "../images/Vamshi1.jpg"; // Importing the image
+import Typewriter from './TypingText';
 
 const HeroSection = ({ nav, handleNav }) => {
-	const scrollToTop = () => {
-		scroll.scrollToTop({ smooth: "linear" });
-	};
+  const scrollToAbout = () => {
+    // Scroll to the About section smoothly
+    const aboutSection = document.getElementById('about');
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
-	const [visible, setVisible] = useState(false);
-
-	const toggleVisible = () => {
-		const scrolled = document.documentElement.scrollTop;
-		if (scrolled > 300) {
-			setVisible(true);
-		} else if (scrolled <= 300) {
-			setVisible(false);
-		}
-	};
-
-	window.addEventListener("scroll", toggleVisible);
-
-	const heroVariants = {
-		hidden: {
-			opacity: 0,
-			y: "-50%",
-		},
-		visible: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 1.4,
-			},
-		},
-	};
-
-	const contactVariants = {
-		hidden: {
-			opacity: 0,
-			x: "-50%",
-		},
-		visible: {
-			opacity: 1,
-			x: 0,
-			transition: {
-				duration: 1.4,
-			},
-		},
-	};
-
-	const menuVariants = {
-		hidden: {
-			opacity: 0,
-		},
-		visible: {
-			opacity: 1,
-			scale: [1, 1.2, 1.5, 1.2, 1],
-			rotate: [0, 0, 360, 360, 360],
-			borderRadius: ["50%", "50%", "50%", "50%", "50%"],
-			transition: {
-				duration: 1,
-			},
-		},
-	};
-
-	return (
-		<div className='hero-section' name='home' id='home'>
-			<div className='hero-overlay'></div>
-			<motion.div
-				// viewport={{ once: true }}
-				variants={menuVariants}
-				initial='hidden'
-				whileInView='visible'
-				onClick={handleNav}
-				className='menu-icon'>
-				{nav ? <FaTimes /> : <FaBars />}
-			</motion.div>
-			<motion.div
-				variants={heroVariants}
-				initial='hidden'
-				whileInView='visible'
-				className={visible ? "to-top-icon show" : "to-top-icon hide"}
-				onClick={scrollToTop}>
-				<AiOutlineArrowUp />
-			</motion.div>
-			<motion.div
-				variants={heroVariants}
-				initial='hidden'
-				whileInView='visible'
-				className='hero-content'>
-				<p className='hero-intro'>
-					<span>Peace</span> <span>Jinadu-Paul.</span>
-				</p>
-				<p className='hero-desc'>
-					I'm a <span className='hero-desc-sub'>Front End Developer.</span>
-				</p>
-			</motion.div>
-			<motion.span
-				variants={contactVariants}
-				initial='hidden'
-				whileInView='visible'>
-				<a
-					href='Peace Jinadu-Paul CV.pdf'
-					download='Peace Jinadu-Paul CV'
-					className='hero-contact'>
-					Download CV <BiDownload className='cv-icon' />
-				</a>
-			</motion.span>
-		</div>
-	);
+  return (
+    <div className="hero-section" name="home" id="home">
+      <div className="hero-overlay"></div>
+      <div className="menu-icon" onClick={handleNav}>
+        {nav ? <FaTimes /> : <FaBars />}
+      </div>
+    
+      <div className="hero-content">
+        <div className="text-side">
+          <h1>Hi there!</h1>
+          <h2>I'm a Software Engineer</h2>
+          <p>I enjoy taking on challenges and creating solutions that make tasks easier for users.</p>
+          <button className="explore-btn" onClick={scrollToAbout}>Explore...</button>
+        </div>
+        <div className="photo-side">
+          <img src={VamshiPhoto} alt="Vamshi Krishna" className="profile-photo" />
+          <Typewriter
+            dataText={["Serla Vamshi Krishna"]} // Display your name
+            period={5000}
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default HeroSection;
