@@ -1,9 +1,8 @@
 import { DiJavascript1 } from "react-icons/di";
 import {
-	FaCss3Alt,
 	FaLock,
 	FaGithub,
-	FaHtml5,
+
 	FaReact,
 	FaSass
 } from "react-icons/fa";
@@ -12,7 +11,6 @@ import {
 
 	SiFirebase,
 	SiAmazonaws,
-	SiWebsockets,
 	SiExpress,
 	SiNextdotjs,
 
