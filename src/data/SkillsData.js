@@ -1,7 +1,7 @@
 import { DiJavascript1 } from "react-icons/di";
 import {
 	FaCss3Alt,
-
+	FaLock,
 	FaGithub,
 	FaHtml5,
 	FaReact,
@@ -11,7 +11,9 @@ import {
 import {
 
 	SiFirebase,
-	SiFramer,
+	SiAmazonaws,
+	SiWebsockets,
+	SiExpress,
 	SiNextdotjs,
 
 	SiTypescript,SiMongodb,SiJson
@@ -22,14 +24,14 @@ import { DiMysql } from "react-icons/di";
 
 
 export const SkillsData = [
-	{
-		name: "HTML",
-		icon: <FaHtml5 />,
-	},
-	{
-		name: "CSS",
-		icon: <FaCss3Alt />,
-	},
+	// {
+	// 	name: "HTML",
+	// 	icon: <FaHtml5 />,
+	// },
+	// {
+	// 	name: "CSS",
+	// 	icon: <FaCss3Alt />,
+	// },
 	{
 		name: "Javascript",
 		icon: <DiJavascript1 />,
@@ -51,6 +53,14 @@ export const SkillsData = [
 		icon: <FaNodeJs />,
 	},
 	{
+		name: "Express.js", 
+		icon: <SiExpress />,
+	 },
+	{
+		name: "AWS", 
+		icon: <SiAmazonaws />,
+	 },
+	{
 		name: "MySQL",
 		icon: <DiMysql />,
 	},
@@ -62,10 +72,7 @@ export const SkillsData = [
 		name: "REST API Development",
 		icon: <FaServer />,
 	},
-	{
-		name: "JSON",
-		icon: <SiJson />,
-	},
+
 	// {
 	// 	name: "React Native",
 	// 	icon: <TbBrandReactNative />,
@@ -83,6 +90,10 @@ export const SkillsData = [
 	// 	icon: <SiTailwindcss />,
 	// },
 	{
+		name: "Auth- NextAuth,JWT,Clerk", 
+		icon: <FaLock />, 
+	},
+	{
 		name: "Sass",
 		icon: <FaSass />,
 	},
@@ -90,9 +101,10 @@ export const SkillsData = [
 	// 	name: "Styled Components",
 	// 	icon: <SiStyledcomponents />,
 	// },
+	
 	{
-		name: "Framer Motion",
-		icon: <SiFramer />,
+		name: "JSON",
+		icon: <SiJson />,
 	},
 	{
 		name: "Git",

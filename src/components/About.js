@@ -72,7 +72,7 @@ const About = () => {
 <br />
   <p>• I created real value for users with PayPack - a Stripe CSV uploader used by 200+ users, and ShipModule - a web app connecting integration data with Dell Boomi.</p>
   <br />
-  <p>• I can build all kinds of websites from start to finish, including e-commerce, shopping, coffee shops, delivery platforms, food ordering systems, and more.</p>
+  <p>• I build backend applications with clean, efficient API code, including REST APIs, for all kinds of platforms like e-commerce, delivery systems, food ordering, and more..</p>
   <br />
   <p>• I'm also a coder who built a community of 82K on Instagram and 1,300+ YouTube subscribers, breaking down how apps like Instagram, OTT platforms, and more work using simple explanations and memes.</p>
 </div>
