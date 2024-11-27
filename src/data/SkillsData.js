@@ -16,10 +16,10 @@ import {
 
 	SiTypescript,SiMongodb,SiJson
 } from "react-icons/si";
-
-import { FaNodeJs,FaServer,FaCogs   } from "react-icons/fa";
+import { GiSpinningGear } from "react-icons/gi"; 
+import { FaNodeJs,FaServer,FaCogs,FaPlay } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
-
+import { SiCypress } from "react-icons/si";
 
 export const SkillsData = [
 	// {
@@ -92,9 +92,13 @@ export const SkillsData = [
 		icon: <FaLock />, 
 	},
 	{
-		name: "Sass",
-		icon: <FaSass />,
-	},
+		name: "Cypress",
+		icon: <SiCypress />, // Placeholder for Cypress
+	  },
+	  {
+		name: "Playwright",
+		icon: <FaPlay />, // Placeholder for Playwright
+	  },
 	// {
 	// 	name: "Styled Components",
 	// 	icon: <SiStyledcomponents />,
@@ -107,6 +111,10 @@ export const SkillsData = [
 	{
 		name: "Git",
 		icon: <FaGithub />,
+	},
+	{
+		name: "Sass",
+		icon: <FaSass />,
 	},
 	{
 		name: "Data Structures",
