@@ -16,7 +16,7 @@ import {
 
 	SiTypescript,SiMongodb,SiJson
 } from "react-icons/si";
-import { GiSpinningGear } from "react-icons/gi"; 
+
 import { FaNodeJs,FaServer,FaCogs,FaPlay } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { SiCypress } from "react-icons/si";
